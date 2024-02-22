@@ -17,8 +17,8 @@ export default function Login() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    console.log("submitted" + data.email);
-    console.log("submitted" + data.password);
+    console.log(data.email);
+    console.log(data.password);
   }
 
   function HandleInput(identifier, event) {
@@ -50,6 +50,7 @@ export default function Login() {
             id="email"
             type="email"
             name="email"
+            className="p-2"
             onBlur={() => handleBlur('email')}
             onChange={(event) => HandleInput("email", event)}
           />
